@@ -1,10 +1,14 @@
-function App() {
-  return(
-    <div>
-      <h1>hello</h1>
-      "dsfd"
-    </div>
-    
+import React from 'react'
+import Card from './components/Card'
+
+const App = () => {
+  const name = 'asmiii'
+  const age = 21
+  return (
+    <>
+      <Card />
+      <Card />
+    </>
   )
 }
 
