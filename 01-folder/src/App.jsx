@@ -1,13 +1,13 @@
 import React from 'react'
-import Card from './components/Card'
+// import Card from './components/Card'
+import Profile from './components/Profile'
 
 const App = () => {
-  const name = 'asmiii'
-  const age = 21
   return (
     <>
-      <Card />
-      <Card />
+      <Profile />
+      <Profile />
+      <Profile />
     </>
   )
 }
