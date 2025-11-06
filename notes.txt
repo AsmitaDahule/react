@@ -28,3 +28,22 @@ import-export
 
 
   3. Props
+      data passes parent - child
+
+
+<Card name='Asmita' age={21} />
+
+
+const Card = (props) => {   ----> props is a object
+  return (
+    <div>
+      <div className='card'>
+        <h2 className='name'>{props.name}, {props.age</h2>
+        <p className='description'>Lorem ipsum dolor sit amet consectetur adipi.</p>
+        <button>View Profile</button>
+      </div>
+    </div>
+  )
+}
+
+export default Card
