@@ -1,3 +1,4 @@
+import-export
 
 1. Making folder with vite
 
@@ -13,3 +14,17 @@
   -npm install
 
   -npm run dev
+
+
+2. Components
+  make another folder Components/ under src/
+  make file - Card.jsx - javascript xml 
+    rafce 
+
+  -variables always pass in {}
+
+
+  ## Always remember don't forgot to style App.jsx main div - most error occur here.
+
+
+  3. Props
