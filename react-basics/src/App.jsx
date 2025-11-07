@@ -1,17 +1,83 @@
 import React from 'react'
 import Card from './components/Card'
+import Profile from './components/Profile'
 
 const App = () => {
+
+  const profiles = [
+  {
+    id: 1,
+    name: "Asmi Dahule",
+    dob: "20 Aug 2004",
+    img: "https://imgs.search.brave.com/6T3HopsOPrWtsn8QOoVSzSgSqUq-eqQW3JUBIW_l50Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnNo/dXR0ZXJzdG9jay5j/b20vYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvc2l0ZXMvNS8y/MDI0LzA2L3Byb2Zp/bGVfcGhvdG9fc2Ft/cGxlXzEuanBnP3Nz/bD0x"
+  },
+  {
+    id: 2,
+    name: "Snehal Patil",
+    dob: "15 May 2003",
+    img: "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    id: 3,
+    name: "Shweta More",
+    dob: "10 Jul 2004",
+    img: "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+    id: 4,
+    name: "Sweta Pawar",
+    dob: "28 Sep 2003",
+    img: "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    id: 5,
+    name: "Riya Sharma",
+    dob: "02 Jan 2005",
+    img: "https://randomuser.me/api/portraits/women/4.jpg"
+  },
+  {
+    id: 6,
+    name: "Priya Nair",
+    dob: "12 Feb 2004",
+    img: "https://randomuser.me/api/portraits/women/5.jpg"
+  },
+  {
+    id: 7,
+    name: "Aditi Deshmukh",
+    dob: "25 Nov 2003",
+    img: "https://randomuser.me/api/portraits/women/6.jpg"
+  },
+  {
+    id: 8,
+    name: "Komal Gupta",
+    dob: "07 Mar 2004",
+    img: "https://randomuser.me/api/portraits/women/7.jpg"
+  },
+  {
+    id: 9,
+    name: "Pooja Singh",
+    dob: "30 Apr 2004",
+    img: "https://randomuser.me/api/portraits/women/8.jpg"
+  },
+  {
+    id: 10,
+    name: "Neha Joshi",
+    dob: "18 Dec 2003",
+    img: "https://randomuser.me/api/portraits/women/9.jpg"
+  }
+];
+
+
   return (
     <div className='parent'>
-    <Card name='Asmita' age={21} img="https://imgs.search.brave.com/9fXjViqCCgggq6LImtxhHgpjhTEdZJet8zBZAeXGSVQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/ODI1Njk1NS9waG90/by9zdHJlZXQtcG9y/dHJhaXQtb2YtYS13/b21hbi1vbi1hLWdy/ZWVuLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWZ5b0JrMjlz/bnJBLU1ScExjdFVY/bXJlR2J1NDBYSlBY/Y0RvSXFZdzdfZnc9"/>
-    <Card name='sdfd' age={25} img="https://imgs.search.brave.com/9fXjViqCCgggq6LImtxhHgpjhTEdZJet8zBZAeXGSVQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/ODI1Njk1NS9waG90/by9zdHJlZXQtcG9y/dHJhaXQtb2YtYS13/b21hbi1vbi1hLWdy/ZWVuLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWZ5b0JrMjlz/bnJBLU1ScExjdFVY/bXJlR2J1NDBYSlBY/Y0RvSXFZdzdfZnc9"/>
-    <Card name='uytre' age={81} img="https://imgs.search.brave.com/HSB0f_dLkBNxu_rYYjHv3ru1ajZ1_8802P8HO9m-dUA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTM4/NzA5MzYyL3Bob3Rv/L3BvcnRyYWl0LW9m/LWEtZ2lybC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9VVFH/WHBlaUxySTc4bk8x/QjlwZVVuMEQwZkNT/UnJtLUo4eG9oTVdH/Mkxtcz0"/>
-    <Card name='pikjh' age={41} img="https://imgs.search.brave.com/9fXjViqCCgggq6LImtxhHgpjhTEdZJet8zBZAeXGSVQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/ODI1Njk1NS9waG90/by9zdHJlZXQtcG9y/dHJhaXQtb2YtYS13/b21hbi1vbi1hLWdy/ZWVuLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWZ5b0JrMjlz/bnJBLU1ScExjdFVY/bXJlR2J1NDBYSlBY/Y0RvSXFZdzdfZnc9"/>
-    <Card name='asf' age={21} img="https://imgs.search.brave.com/HSB0f_dLkBNxu_rYYjHv3ru1ajZ1_8802P8HO9m-dUA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTM4/NzA5MzYyL3Bob3Rv/L3BvcnRyYWl0LW9m/LWEtZ2lybC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9VVFH/WHBlaUxySTc4bk8x/QjlwZVVuMEQwZkNT/UnJtLUo4eG9oTVdH/Mkxtcz0"/>
-    <Card name='tertr' age={37} img="https://imgs.search.brave.com/9fXjViqCCgggq6LImtxhHgpjhTEdZJet8zBZAeXGSVQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/ODI1Njk1NS9waG90/by9zdHJlZXQtcG9y/dHJhaXQtb2YtYS13/b21hbi1vbi1hLWdy/ZWVuLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWZ5b0JrMjlz/bnJBLU1ScExjdFVY/bXJlR2J1NDBYSlBY/Y0RvSXFZdzdfZnc9"/>
-    <Card name='kkhyt' age={58} img="https://imgs.search.brave.com/HSB0f_dLkBNxu_rYYjHv3ru1ajZ1_8802P8HO9m-dUA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTM4/NzA5MzYyL3Bob3Rv/L3BvcnRyYWl0LW9m/LWEtZ2lybC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9VVFH/WHBlaUxySTc4bk8x/QjlwZVVuMEQwZkNT/UnJtLUo4eG9oTVdH/Mkxtcz0"/>
-    <Card name='fsdf' age={12} img="https://imgs.search.brave.com/9fXjViqCCgggq6LImtxhHgpjhTEdZJet8zBZAeXGSVQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/ODI1Njk1NS9waG90/by9zdHJlZXQtcG9y/dHJhaXQtb2YtYS13/b21hbi1vbi1hLWdy/ZWVuLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWZ5b0JrMjlz/bnJBLU1ScExjdFVY/bXJlR2J1NDBYSlBY/Y0RvSXFZdzdfZnc9"/>
+      {
+        profiles.map((profile) => {
+          return (
+            <Profile name={profile.name} dob={profile.dob} img={profile.img} /> 
+          )
+        })
+      }
+
     </div>
   )
 }

@@ -47,3 +47,13 @@ const Card = (props) => {   ----> props is a object
 }
 
 export default Card
+
+
+
+download lucid-react to use icons and also import 
+import { } from 'lucid-react'
+
+
+make props project
+
+elem, idx
