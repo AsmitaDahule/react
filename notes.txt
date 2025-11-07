@@ -15,6 +15,8 @@ import-export
 
   -npm run dev
 
+********************************************************************************************
+
 
 2. Components
   make another folder Components/ under src/
@@ -22,6 +24,8 @@ import-export
     rafce 
 
   -variables always pass in {}
+
+********************************************************************************************
 
 
   ## Always remember don't forgot to style App.jsx main div - most error occur here.
@@ -48,7 +52,7 @@ const Card = (props) => {   ----> props is a object
 
 export default Card
 
-
+******************************************************************************************
 
 download lucid-react to use icons and also import 
 import { } from 'lucid-react'
@@ -59,12 +63,6 @@ make props project
 const App = () => {
 
   const profiles = [
-  {
-    id: 1,
-    name: "Asmi Dahule",
-    dob: "20 Aug 2004",
-    img: "https://imgs.search.brave.com/6T3HopsOPrWtsn8QOoVSzSgSqUq-eqQW3JUBIW_l50Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnNo/dXR0ZXJzdG9jay5j/b20vYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvc2l0ZXMvNS8y/MDI0LzA2L3Byb2Zp/bGVfcGhvdG9fc2Ft/cGxlXzEuanBnP3Nz/bD0x"
-  },
   {
     id: 2,
     name: "Snehal Patil",
@@ -82,42 +80,6 @@ const App = () => {
     name: "Sweta Pawar",
     dob: "28 Sep 2003",
     img: "https://randomuser.me/api/portraits/women/3.jpg"
-  },
-  {
-    id: 5,
-    name: "Riya Sharma",
-    dob: "02 Jan 2005",
-    img: "https://randomuser.me/api/portraits/women/4.jpg"
-  },
-  {
-    id: 6,
-    name: "Priya Nair",
-    dob: "12 Feb 2004",
-    img: "https://randomuser.me/api/portraits/women/5.jpg"
-  },
-  {
-    id: 7,
-    name: "Aditi Deshmukh",
-    dob: "25 Nov 2003",
-    img: "https://randomuser.me/api/portraits/women/6.jpg"
-  },
-  {
-    id: 8,
-    name: "Komal Gupta",
-    dob: "07 Mar 2004",
-    img: "https://randomuser.me/api/portraits/women/7.jpg"
-  },
-  {
-    id: 9,
-    name: "Pooja Singh",
-    dob: "30 Apr 2004",
-    img: "https://randomuser.me/api/portraits/women/8.jpg"
-  },
-  {
-    id: 10,
-    name: "Neha Joshi",
-    dob: "18 Dec 2003",
-    img: "https://randomuser.me/api/portraits/women/9.jpg"
   }
 ];
 
@@ -125,9 +87,11 @@ const App = () => {
   return (
     <div className='parent'>
       {
-        profiles.map((profile) => {
+        profiles.map((profile, idx) => {
           return (
-            <Profile name={profile.name} dob={profile.dob} img={profile.img} /> 
+            <div key={idx}>
+              <Profile name={profile.name} dob={profile.dob} img={profile.img} />
+            </div> 
           )
         })
       }
@@ -138,4 +102,24 @@ const App = () => {
 
 elem, idx
 
+********************************************************************************************
+use tailwind css for styling
 
+using vite
+
+npm install tailwindcss @tailwindcss/vite
+
+import this ---- import tailwindcss from '@tailwindcss/vite'
+and add this --- plugins: [
+    tailwindcss(),
+  ],
+
+
+  import this in index.css --- @import "tailwindcss";
+
+
+
+  ***************************************************************************************
+
+  UI project
+  
