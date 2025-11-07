@@ -71,9 +71,11 @@ const App = () => {
   return (
     <div className='parent'>
       {
-        profiles.map((profile) => {
+        profiles.map((profile, idx) => {
           return (
-            <Profile name={profile.name} dob={profile.dob} img={profile.img} /> 
+            <div key={idx}>
+              <Profile name={profile.name} dob={profile.dob} img={profile.img} />
+            </div> 
           )
         })
       }

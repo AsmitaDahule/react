@@ -72,6 +72,7 @@ button {
 .profile-name {
   color: black;
   margin-top: 10px;
+  font-size: 20px;
   
 }
 
@@ -98,6 +99,7 @@ button {
   border-radius: 20px;
   padding: 5px 20px;
   cursor: pointer;
+  font-size: 12px;
 }
 
 
@@ -107,4 +109,5 @@ button {
   padding: 5px 20px;
    background: linear-gradient(135deg, #9440ee, #4b88f0);
    cursor: pointer;
+   font-size: 12px;
 }
