@@ -123,3 +123,29 @@ and add this --- plugins: [
 
   UI project
   
+  <div  className="flex justify-center items-center h-screen bg-gray-100">
+      <ProjectUi />
+    </div>
+
+
+************************************************************************************
+
+functions in react
+
+ <div>
+      <button onClick={function() {
+        console.log("clicked");
+      }}>click here</button>
+    </div>
+
+
+  ******************************************************************************
+
+  Hooks
+
+  1. useState  --- manage state
+  2. useEffect ---- side process, api handle
+  3. useRef --- change variable using react (select something)
+  4. useContext   --- manage global context
+  5. useReducer  ---  check which thing is accessible and which not 
+  6. 
