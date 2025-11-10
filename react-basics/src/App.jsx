@@ -1,26 +1,30 @@
-import React, { useState } from 'react'
-import ProjectUi from './components/project-ui/ProjectUi.jsx'
-
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const App = () => {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
 
-   const [count, setCount] = useState(0);
+  function aChange() {
+    setA(a + 1);
+  }
 
-   function incNum(){
-    setCount(count + 1);
-   }
+   function bChange() {
+    setB(b + 1);
+  }
 
-   function decNum(){
-    setCount(count - 1);
-   }
-    
+  useEffect(() => {
+    console.log("use effect runnign ....");
+  },[a])
+
   return (
-    
     <div>
-      <div className='cnt'>{count}</div>
-      <button onClick={incNum}>increase</button>
-      <button onClick={decNum}>decrease</button>
+      <h1>{a}</h1>
+      <h1>{b}</h1>
+      <button onClick={aChange}>a</button>
+      <button onClick={bChange}>b</button>
     </div>
-  )
-}
-export default App 
+  );
+};
+
+export default App;
