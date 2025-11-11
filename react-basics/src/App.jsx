@@ -1,28 +1,18 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
+import Contact from "./components/Contact.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
-  const [a, setA] = useState(0);
-  const [b, setB] = useState(0);
-
-  function aChange() {
-    setA(a + 1);
-  }
-
-   function bChange() {
-    setB(b + 1);
-  }
-
-  useEffect(() => {
-    console.log("use effect runnign ....");
-  },[a])
-
   return (
     <div>
-      <h1>{a}</h1>
-      <h1>{b}</h1>
-      <button onClick={aChange}>a</button>
-      <button onClick={bChange}>b</button>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
     </div>
   );
 };
